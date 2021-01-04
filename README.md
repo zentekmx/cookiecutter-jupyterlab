@@ -33,7 +33,6 @@ my_book
 │   ├── markdown.md
 │   ├── notebooks.ipynb
 │   └── references.bib
-├── output
 ├── README.md
 └── requirements.txt
 ```
@@ -88,6 +87,11 @@ $ make install
 4. Start the Jupyter Lab development environment:
 
 ```bash
+# Rename .env.sample and apply settings
+$ mv .env.sample .env
+```
+
+```bash
 $ make jupyterlab
 ```
 
@@ -97,7 +101,7 @@ $ make jupyterlab
 $ make jupyterbook
 ```
 
-6. View your rendered book in `output/html/index.html`.
+6. View your rendered book in `my_book/_build/html/index.html`.
 
 7. Make edits to your book by adding more content, updating the table of contents in `my_book/_toc.yml`, and and/or by editing the configuration file `my_book/_config.yml`. See the [Jupyter Book documentation](https://jupyterbook.org/intro.html) for more information on customizing your book.
 
