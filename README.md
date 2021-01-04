@@ -10,7 +10,15 @@
   <img src="{{cookiecutter.book_slug}}/{{cookiecutter.book_slug}}/logo.png" width="400">
 </p>
 
-A cookiecutter template for creating a convenient [Jupyter Lab](https://jupyter.org/) a web-based interactive development environment for Jupyter notebooks **plus** [Jupyter Book](https://jupyterbook.org/intro.html) for building beautiful, publication-quality books and documents **plus** [Makefile](https://www.gnu.org/software/make/manual/make.html) for using make build automation tool. See the rendered version of this cookiecutter template [here](https://zentekmx.github.io/cookiecutter-jupyterlab/).
+A cookiecutter template for creating a convenient Jupyter Project with following on-demand-use features:
+* [Jupyter Lab](https://jupyter.org/), the next generation web-based interactive development environment for notebooks.
+* [Jupyter Lab Extensions](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html), which enhance JupyterLab.
+* [Jupyter Book](https://jupyterbook.org/intro.html) for building beautiful, publication-quality books and documents.
+* [PostgreSQL](https://www.postgresql.org/) for using as database backend when required.
+
+After project (and virtualenv) creation all tasks are handled by [make](https://www.gnu.org/software/make/manual/make.html) for convenience.
+
+See the rendered version of this cookiecutter template [here](https://zentekmx.github.io/cookiecutter-jupyterlab/).
 
 ## Template
 
@@ -31,10 +39,11 @@ my_book
 │   ├── intro.md
 │   ├── logo.png
 │   ├── markdown.md
-│   ├── notebooks.ipynb
+│   ├── <book_slug>.ipynb
 │   └── references.bib
 ├── README.md
 └── requirements.txt
+└── Makefile
 ```
 
 ## Usage
@@ -50,8 +59,9 @@ $ pip install -U cookiecutter
 ```bash
 $ cookiecutter git@github.com:zentekmx/cookiecutter-jupyterlab.git
 
-author_name [Captain Jupyter]: Tomas Beuzen
-github_or_gitlab_username [tomasbeuzen]:
+author_name [Captain Jupyter]:
+author_email [captain@jupyter.org]:
+github_or_gitlab_username [tomasbeuzen]: 
 book_name [My Awesome Book]:
 book_slug [my_book]:
 book_short_description [This cookiecutter creates a simple boilerplate for a Jupyter Book.]: My first Jupyter Book!
