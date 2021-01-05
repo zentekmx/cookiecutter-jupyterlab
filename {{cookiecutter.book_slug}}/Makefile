@@ -60,6 +60,10 @@ jupyterlab:
 jupyterbook:
 	@jupyter-book build ./notebooks
 
+# ghp-publish - Publish notebooks to github pages
+ghp-publish:
+	@ghp-import -n -p -f notebooks/_build/html
+
 #: dbshell - Access database shell
 dbshell:
 ifeq (, $(shell which psql))

@@ -1,4 +1,7 @@
-# Markdown Files
+Help
+=======================
+
+## Markdown Files
 
 Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
 in regular markdown files (`.md`), you'll write in the same flavor of markdown
@@ -66,7 +69,7 @@ Some content {rolename}`and here is my role's content!`
 Again, roles will only work if `rolename` is a valid role's name. For example,
 the `doc` role can be used to refer to another page in your book. You can
 refer directly to another page by its relative path. For example, the
-role syntax `` {doc}`intro` `` will result in: {doc}`intro`.
+role syntax `` {doc}`overview` `` will result in: {doc}`overview`.
 
 For more information on writing roles, see the
 [MyST documentation](https://myst-parser.readthedocs.io/).

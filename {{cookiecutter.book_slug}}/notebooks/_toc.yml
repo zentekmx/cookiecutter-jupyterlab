@@ -1,7 +1,9 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
-- file: content
+file: {{cookiecutter.book_slug}}
+sections:
+- file: overview
   sections:
-    - file: markdown
-    - file: {{cookiecutter.book_slug}}
+  - file: content
+- file: help
+- file: log
